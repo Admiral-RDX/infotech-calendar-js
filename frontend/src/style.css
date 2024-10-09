@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Loading */
+dashboard-component::part(loading) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><radialGradient id="a12" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)"><stop offset="0" stop-color="%23000000" style="--darkreader-inline-stopcolor: %236d006d;" data-darkreader-inline-stopcolor=""></stop><stop offset=".3" stop-color="%23000000" stop-opacity=".9" style="--darkreader-inline-stopcolor: %236d006d;" data-darkreader-inline-stopcolor=""></stop><stop offset=".6" stop-color="%23000000" stop-opacity=".6" style="--darkreader-inline-stopcolor: %236d006d;" data-darkreader-inline-stopcolor=""></stop><stop offset=".8" stop-color="%23000000" stop-opacity=".3" style="--darkreader-inline-stopcolor: %236d006d;" data-darkreader-inline-stopcolor=""></stop><stop offset="1" stop-color="%23000000" stop-opacity="0" style="--darkreader-inline-stopcolor: %236d006d;" data-darkreader-inline-stopcolor=""></stop></radialGradient><circle transform-origin="center" fill="none" stroke="url(%23a12)" stroke-width="15" stroke-linecap="round" stroke-dasharray="200 1000" stroke-dashoffset="0" cx="100" cy="100" r="70"><animateTransform type="rotate" attributeName="transform" calcMode="spline" dur="2.6" values="360;0" keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform></circle><circle transform-origin="center" fill="none" opacity=".2" stroke="%23000000" stroke-width="15" stroke-linecap="round" cx="100" cy="100" r="70" style="--darkreader-inline-stroke: %23ff6dff;" data-darkreader-inline-stroke=""></circle></svg>');
+}
+
+/* Error */
+dashboard-component::part(err-msg) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+/* Container */
+dashboard-component::part(dashboard-body) {
+    display: flex;
+    width: 100%;
+    padding: 3rem;
+    gap: 2rem;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+dashboard-component::part(event-search) {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+dashboard-component::part(event-search):hover {
+    background: #f9f9f9;
+}
+
+/* Table */
+dashboard-component::part(table) {
+    width: 100%;
+    overflow-y: auto;
+}
+
+dashboard-component::part(card) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+dashboard-component::part(card):hover {
+    background-color: #f9f9f9;
+}
+
+dashboard-component::part(delete-button) {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Form */
+dashboard-component::part(form) {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+dashboard-component::part(input) {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    outline: none;
+}
+
+dashboard-component::part(input):hover {
+    background: #f9f9f9;
+}
+
+dashboard-component::part(select) {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    outline: none;
+    background-color: transparent;
+}
+
+dashboard-component::part(select):hover {
+    background: #f9f9f9;
+}
+
+dashboard-component::part(button) {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+dashboard-component::part(button):hover {
+    background: #f9f9f9;
+}

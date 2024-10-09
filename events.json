@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Annual Tech Conference",
+        "type": "Conference",
+        "date": "2024-11-12"
+    },
+    {
+        "id": 2,
+        "name": "Web Development Workshop",
+        "type": "Workshop",
+        "date": "2024-10-15"
+    },
+    {
+        "id": 3,
+        "name": "Networking Event",
+        "type": "Meetup",
+        "date": "2024-11-25"
+    },
+    {
+        "id": 4,
+        "name": "Product Launch",
+        "type": "Launch",
+        "date": "2024-12-01"
+    },
+    {
+        "id": 5,
+        "name": "AI and ML Seminar",
+        "type": "Seminar",
+        "date": "2025-01-10"
+    }
+]
